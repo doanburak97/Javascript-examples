@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		var grade,gradeValue;
+		var pass,fail;
+		var counterGrade;
+
+		
+		counterGrade = 0;
+		pass = 0;
+		fail = 0;
+		
+		grade = window.prompt("Enter grade(For exit -1):","0");
+		gradeValue = parseInt(grade);
+		
+		while(gradeValue != -1){
+			
+			counterGrade = counterGrade + 1;
+			grade = window.prompt("Enter grade(For exit -1):","0");
+			gradeValue = parseInt(grade);
+			
+			if(gradeValue < 50){
+				fail = fail + 1;
+			}else{
+				pass = pass + 1;
+			}
+		}
+		document.write("Number of students:",counterGrade,
+		"<br>","Passes:",pass,"<br>","Fail:",fail);
+	</script>
+	<table border=1;>
+		<tr>
+			<td>Number of students<td>
+			<td>Passes</td>
+			<td>Failed</td>
+		</tr>
+		<tr>
+			<td>counterGrade</td>
+			<td>pass</td>
+			<td>fail</td>
+		</tr>	
+	</table>
+</body>
+</html>		

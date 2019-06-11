@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		var grade;
+		var gradeValue;
+		var total;
+		var gradeCounter;
+		var average;
+		
+		total = 0;
+		gradeCounter = 0;
+		average = 0;
+		
+		grade = window.prompt("Enter grade(For exit enter -1):","0");
+		
+		gradeValue = parseInt(grade);
+		
+		while(gradeValue != -1){
+			
+			total = total + gradeValue;
+			
+			gradeCounter = gradeCounter + 1;
+			
+			grade = window.prompt("Enter grade(For exit enter -1):","0");
+			
+			gradeValue = parseInt(grade); 
+		}
+		
+		average = total / gradeCounter;
+		
+		document.write(average);
+		
+	</script>
+</body>
+</html>	

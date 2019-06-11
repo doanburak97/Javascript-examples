@@ -1,0 +1,27 @@
+<!DCOTYPE html>
+<html>
+<body>
+	<script>
+		var name;
+		var now = new Date();
+		var hour = now.getHours();
+		
+		name = window.prompt("Enter your name:");
+		
+		document.write(hour);
+		document.write("<br>")
+		document.write(now);
+		document.write("<br>")
+		
+		if(hour<12){
+			document.write("Good morning.");
+		}else{
+			if(hour<20){
+				document.write("Good afternoon.");
+			}else{
+				document.write("Good Evening.");
+			}
+		}
+	</script>
+</body>
+</hmtl>	

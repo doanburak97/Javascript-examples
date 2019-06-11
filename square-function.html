@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+	<center>
+	<script>
+		var times;
+		var timesValue;
+		
+		times = window.prompt("How many number:","0");
+		timesValue = parseInt(times);
+		
+		for(var x = 1;x <= timesValue; x++){
+			document.writeln("Square of ",x," is:",square(x),"<br>");
+			document.writeln("Cube of ",x," is:",cube(x),"<br>");
+			document.writeln("<hr>");	
+		}
+		
+		function square(y){
+			return y * y;
+		}
+		
+		function cube(y){
+			return y*y*y;
+		}
+	</script>
+</body>
+</head>

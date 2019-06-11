@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset=UTF-8>
+	<center>
+	<script>
+		//yillik faiz getirisini hesaplayan program SINAV sorusuydu
+		var amount;
+		var principal = 10000.0;
+		var rate = .05;
+		
+		document.write("<h1>Calculating Compound Interest</h1>");
+		document.write("<br>");
+			
+		document.write("<table border=1>");
+		document.write("<tr>");
+		document.write("<td>Year</td>");
+		document.write("<td>Amount on deposit</td>");
+		document.write("</tr>");
+		
+		
+		for(var year = 1;year<=10;++year){
+			amount = principal * Math.pow(1.0 + rate,year);
+			document.write("<tr>");
+			document.write("<td>",year,"</td>");
+			document.write("<td>",amount.toFixed(2),"</td>");
+			document.write("</tr>");
+		}
+		
+		document.write("</table>");
+	</script>
+</head>
+<body>
+</body>
+</html>
